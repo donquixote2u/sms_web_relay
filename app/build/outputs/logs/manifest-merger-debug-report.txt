@@ -1,0 +1,89 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:2:1-32:12
+	package
+		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:3:7-42
+		INJECTED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml
+		INJECTED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:5:7-32
+		INJECTED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml
+		INJECTED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:4:7-30
+		INJECTED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml
+		INJECTED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:7:5-70
+	android:name
+		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:7:22-67
+uses-permission#android.permission.SEND_SMS
+ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:8:5-67
+	android:name
+		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:8:22-64
+uses-permission#android.permission.READ_SMS
+ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:9:22-64
+uses-permission#android.permission.WRITE_SMS
+ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:10:5-68
+	android:name
+		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:10:22-65
+uses-permission#android.permission.INTERNET
+ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:11:22-64
+application
+ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:13:5-31:19
+	android:label
+		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:13:48-80
+	android:icon
+		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:13:18-47
+activity#com.example.sms_web_relay.Main
+ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:14:9-19:20
+	android:label
+		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:14:65-97
+	android:name
+		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:14:19-64
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:15:13-18:29
+action#android.intent.action.MAIN
+ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:17:17-77
+	android:name
+		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:17:27-74
+receiver#com.example.sms_web_relay.SMSReceiver
+ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:21:3-25:14
+	android:name
+		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:21:13-65
+intent-filter#action:name:android.provider.Telephony.SMS_RECEIVED
+ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:22:4-24:20
+action#android.provider.Telephony.SMS_RECEIVED
+ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:23:5-70
+	android:name
+		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:23:13-67
+activity#com.example.sms_web_relay.Prefs
+ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:27:3-29:14
+	android:label
+		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:28:12-44
+	android:name
+		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:27:13-59
+uses-sdk
+INJECTED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml
+INJECTED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml
+		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml
+		INJECTED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml

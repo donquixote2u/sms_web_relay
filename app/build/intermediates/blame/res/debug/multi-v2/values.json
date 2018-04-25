@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/bruce/SW/Android/StudioProjects/sms_web_relay/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "3,2",
+                        "startColumns": "4,4",
+                        "startOffsets": "112,55",
+                        "endColumns": "50,56",
+                        "endOffsets": "158,107"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,106",
+                        "endColumns": "50,56",
+                        "endOffsets": "101,158"
+                    }
+                }
+            ]
+        }
+    ]
+}

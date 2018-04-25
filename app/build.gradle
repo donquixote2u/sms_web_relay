@@ -1,0 +1,24 @@
+import com.android.build.gradle.AppExtension
+
+apply plugin: 'com.android.application'
+
+def Version = android {
+    compileSdkVersion 15
+//    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "com.example.sms_web_relay"
+        minSdkVersion 15
+    }
+
+    dependencies {
+        compile 'org.nanohttpd:nanohttpd:2.2.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
