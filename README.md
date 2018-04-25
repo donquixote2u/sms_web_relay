@@ -1,5 +1,5 @@
 # smshttp
-get web data via sms  ;  Android Studio Project ide; forked from kalsms, sms multipart txt functionality added
+get web data via sms  ;  Android Studio Project ide; forked from kalsms, sms multipart txt functionality added<br>
 sms send via http request thanks to https://github.com/lopspower/AndroidWebServer example of nanohttpd
 
 uses android phone as sms relay:
