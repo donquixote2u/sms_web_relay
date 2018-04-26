@@ -18,7 +18,7 @@ public class Main extends Activity {
 	
 	public String identifier = "";
 	public String targetUrl = "";
-	
+	public int httpPort;
     
 	public void onResume() {
 		Log.d("KALSMS", "RESUME");
@@ -58,8 +58,9 @@ public class Main extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         PreferenceManager.setDefaultValues(this, R.xml.prefs, false);
-		int port=8080;
-		WebServer webServer = new WebServer(port);
+		SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
+		this.httpPort = Integer.parseInt(settings.getString("pref_http_port", "8080"));
+		WebServer webServer = new WebServer(httpPort);
 		try {
 			webServer.start();
 		} catch (IOException e) {

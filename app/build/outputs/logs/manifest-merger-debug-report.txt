@@ -44,9 +44,9 @@ ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/Andr
 application
 ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:13:5-31:19
 	android:label
-		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:13:48-80
+		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:13:55-87
 	android:icon
-		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:13:18-47
+		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:13:18-54
 activity#com.example.sms_web_relay.Main
 ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:14:9-19:20
 	android:label

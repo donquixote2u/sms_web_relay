@@ -1,12 +1,9 @@
 package com.example.sms_web_relay;
 
+import android.util.Log;
 import java.util.Map;
-
 import fi.iki.elonen.NanoHTTPD;
 
-/**
- * Created by Mikhael LOPEZ on 14/12/2015.
- */
 public class WebServer extends NanoHTTPD {
 
     public WebServer(int port) {
@@ -21,10 +18,14 @@ public class WebServer extends NanoHTTPD {
     public Response serve(IHTTPSession session) {
         String msg = "<html><body><h1>Hello server</h1>\n";
         Map<String, String> parms = session.getParms();
-        if (parms.get("username") == null) {
-            msg += "<form action='?' method='get'>\n  <p>Your name: <input type='text' name='username'></p>\n" + "</form>\n";
+        Log.d("KALSMS", parms.toString());
+        if (parms.get("phone_number") == null) {
+            msg += "<form action='?' method='get'>\n  ";
+            msg += "<p>Phone Number: <input type='text' name='phone_number'></p>\n";
+            msg += "<p>Message: <input type='text' name='sms_message'></p>\n";
+            msg += "<p><input type='submit'></p>\n</form>";
         } else {
-            msg += "<p>Hello, " + parms.get("username") + "!</p>";
+            msg += "<p>message sent to:" + parms.get("phone_number") + "</p>";
         }
         return newFixedLengthResponse( msg + "</body></html>\n" );
     }

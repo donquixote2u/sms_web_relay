@@ -4,4 +4,5 @@
 
 	<EditTextPreference android:key="pref_target_url" android:title="Target URL" android:defaultValue="http://somedomain/smshttp/smshttp.php" android:summary="URL to load when the SMS is received"></EditTextPreference>
 	<EditTextPreference android:key="pref_identifier" android:title="SMS Identifier" android:defaultValue="q" android:summary="Handle only SMS messages starting with this string (leave empty to handle all messages)"></EditTextPreference>
+	<EditTextPreference android:key="pref_http_port" android:title="HTTP Listen Port" android:defaultValue="8080" android:summary="Port number for http server to listen on"></EditTextPreference>
 </PreferenceScreen>

@@ -36,7 +36,6 @@ import org.xml.sax.InputSource;
 
 public class SMSReceiver extends BroadcastReceiver {
 
-	
 	@Override
 	// source: http://www.devx.com/wireless/Article/39495/1954
 	public void onReceive(Context context, Intent intent) {
@@ -65,7 +64,7 @@ public class SMSReceiver extends BroadcastReceiver {
 				// send the message to the URL
 				String resp = openURL(sender, message, targetUrl).toString();
 				
-				Log.d("KALSMS", "RESP:\"" + resp);
+				Log.d("KALSMS", "RESP:\"" + resp + "\"");
 				
 				// SMS back the response
 				if (resp.trim().length() > 0) {
@@ -77,6 +76,7 @@ public class SMSReceiver extends BroadcastReceiver {
 						String sendTo = items.get(j).get(0);
 						if (sendTo.toLowerCase() == "sender") sendTo = sender;
 						String sendMsg = items.get(j).get(1);
+						// SmsManager smgr = SmsManager.getDefault();
 						if (sendMsg!=null && !sendMsg.isEmpty()) {
 							Log.d("KALSMS", "SEND MSG:\"" + sendMsg + "\" TO: " + sendTo);
 							// 19/4/18 revise to use multipart txt send instead of single
