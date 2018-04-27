@@ -60,55 +60,56 @@ public class SMSReceiver extends BroadcastReceiver {
 					&& (message.toLowerCase().startsWith(identifier) || identifier.trim() == "")) {
 
 				Log.d("KALSMS", "MSG RCVD:\"" + message + "\" from: " + sender);
-				
+
 				// send the message to the URL
 				String resp = openURL(sender, message, targetUrl).toString();
-				
+
 				Log.d("KALSMS", "RESP:\"" + resp + "\"");
-				
+
 				// SMS back the response
 				if (resp.trim().length() > 0) {
 					ArrayList<ArrayList<String>> items = parseXML(resp);
-					
+
 					// SmsManager smgr = SmsManager.getDefault();
 
 					for (int j = 0; j < items.size(); j++) {
 						String sendTo = items.get(j).get(0);
 						if (sendTo.toLowerCase() == "sender") sendTo = sender;
 						String sendMsg = items.get(j).get(1);
-						SmsManager smgr = SmsManager.getDefault();
-						if (sendMsg!=null && !sendMsg.isEmpty()) {
-							Log.d("KALSMS", "SEND MSG:\"" + sendMsg + "\" TO: " + sendTo);
-							// 19/4/18 revise to use multipart txt send instead of single
-							if (sendMsg.length() > 155) {
-								ArrayList<String> parts = smgr.divideMessage(sendMsg);
-								try {
-									// smgr.sendTextMessage(sendTo, null, sendMsg, null, null);
-									smgr.sendMultipartTextMessage(sendTo, null, parts, null, null);
-								} catch (Exception ex) {
-									Log.d("KALSMS", "SMS MULTIPART FAILED \"" + ex + "\"");
-								}
+						if (sendMsg != null && !sendMsg.isEmpty()) {
+							SendSMS(sendTo, sendMsg);
 							}
-							else {	// sms < 155
-								try {
-									smgr.sendTextMessage(sendTo, null, sendMsg, null, null);
-								} catch (Exception ex) {
-									Log.d("KALSMS", "SMS SEND FAILED \"" + ex + "\"");
-								}
-							}
-						}
-						else  {
+						else {
 							Log.d("KALSMS", "NO DATA RETURNED ");
+							}
 						}
 					}
-				}
-				
 				// delete SMS from inbox, to prevent it from filling up
 				DeleteSMSFromInbox(context, mesg);
-								
+				}
 			}
-		}
+	}
 
+	public static void SendSMS(String sendTo, String sendMsg) {
+		SmsManager smgr = SmsManager.getDefault();
+		Log.d("KALSMS", "SEND MSG:\"" + sendMsg + "\" TO: " + sendTo);
+		// 19/4/18 revise to use multipart txt send instead of single
+		if (sendMsg.length() > 155) {
+			ArrayList<String> parts = smgr.divideMessage(sendMsg);
+			try {
+				// smgr.sendTextMessage(sendTo, null, sendMsg, null, null);
+				smgr.sendMultipartTextMessage(sendTo, null, parts, null, null);
+			} catch (Exception ex) {
+				Log.d("KALSMS", "SMS MULTIPART FAILED \"" + ex + "\"");
+			}
+		} else {    // sms < 155
+			try {
+				smgr.sendTextMessage(sendTo, null, sendMsg, null, null);
+			} catch (Exception ex) {
+				Log.d("KALSMS", "SMS SEND FAILED \"" + ex + "\"");
+			}
+
+		}
 	}
 
 	private void DeleteSMSFromInbox(Context context, SmsMessage mesg) {

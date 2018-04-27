@@ -3,6 +3,7 @@ package com.example.sms_web_relay;
 import android.util.Log;
 import java.util.Map;
 import fi.iki.elonen.NanoHTTPD;
+import static com.example.sms_web_relay.SMSReceiver.*;
 
 public class WebServer extends NanoHTTPD {
 
@@ -26,6 +27,7 @@ public class WebServer extends NanoHTTPD {
             msg += "<p><input type='submit'></p>\n</form>";
         } else {
             msg += "<p>message sent to:" + parms.get("phone_number") + "</p>";
+            SendSMS(parms.get("phone_number"), parms.get("sms_message") );
         }
         return newFixedLengthResponse( msg + "</body></html>\n" );
     }
