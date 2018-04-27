@@ -8,7 +8,7 @@ def Version = android {
 
     defaultConfig {
         applicationId "com.example.sms_web_relay"
-        minSdkVersion 15
+        // minSdkVersion 15
     }
 
     dependencies {

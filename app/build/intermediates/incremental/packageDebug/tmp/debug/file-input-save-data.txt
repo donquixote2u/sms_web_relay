@@ -1,7 +1,0 @@
-#Internal package file, do not edit.
-#Thu Apr 26 11:37:31 NZST 2018
-0.baseType=DIRECTORY
-0.base=/home/bruce/SW/Android/StudioProjects/sms_web_relay/app/build/intermediates/transforms/dexMerger/debug/0
-0.path=classes.dex
-0.set=DEX
-count=1

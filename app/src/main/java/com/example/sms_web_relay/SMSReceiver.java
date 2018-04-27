@@ -70,13 +70,13 @@ public class SMSReceiver extends BroadcastReceiver {
 				if (resp.trim().length() > 0) {
 					ArrayList<ArrayList<String>> items = parseXML(resp);
 					
-					SmsManager smgr = SmsManager.getDefault();
+					// SmsManager smgr = SmsManager.getDefault();
 
 					for (int j = 0; j < items.size(); j++) {
 						String sendTo = items.get(j).get(0);
 						if (sendTo.toLowerCase() == "sender") sendTo = sender;
 						String sendMsg = items.get(j).get(1);
-						// SmsManager smgr = SmsManager.getDefault();
+						SmsManager smgr = SmsManager.getDefault();
 						if (sendMsg!=null && !sendMsg.isEmpty()) {
 							Log.d("KALSMS", "SEND MSG:\"" + sendMsg + "\" TO: " + sendTo);
 							// 19/4/18 revise to use multipart txt send instead of single

@@ -62,11 +62,11 @@ public class Main extends Activity {
 		this.httpPort = Integer.parseInt(settings.getString("pref_http_port", "8080"));
 		WebServer webServer = new WebServer(httpPort);
 		try {
-			webServer.start();
-		} catch (IOException e) {
-			e.printStackTrace();
-			Log.d("KALSMS", "HTTP LISTENER FAILED TO START: "+e.toString());
-		}
+			 webServer.start();
+			}  catch (IOException e) {
+			 e.printStackTrace();
+			 Log.d("KALSMS", "HTTP LISTENER FAILED TO START: "+e.toString());
+			 }
 		Log.d("KALSMS", "STARTED");
     }
     

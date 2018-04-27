@@ -1,1 +1,1 @@
-[{"name":"org.nanohttpd:nanohttpd:2.2.0-0","index":0,"scopes":["EXTERNAL_LIBRARIES"],"types":["DEX_ARCHIVE"],"format":"JAR","present":true},{"name":"6007948b77f2926a88b557785b7f69704f770c8a","index":1,"scopes":["PROJECT"],"types":["DEX_ARCHIVE"],"format":"DIRECTORY","present":true}]
+[{"name":"6007948b77f2926a88b557785b7f69704f770c8a","index":1,"scopes":["PROJECT"],"types":["DEX_ARCHIVE"],"format":"DIRECTORY","present":true},{"name":"org.nanohttpd:nanohttpd:2.2.0","index":2,"scopes":["EXTERNAL_LIBRARIES"],"types":["DEX_ARCHIVE"],"format":"JAR","present":true}]

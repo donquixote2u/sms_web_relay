@@ -79,11 +79,3 @@ ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/Andr
 		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:28:12-44
 	android:name
 		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml:27:13-59
-uses-sdk
-INJECTED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml
-INJECTED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml
-	android:minSdkVersion
-		INJECTED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml
-		ADDED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml
-		INJECTED from /home/bruce/SW/Android/StudioProjects/sms_web_relay/app/src/main/AndroidManifest.xml
